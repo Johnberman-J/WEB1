@@ -3,15 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script>
+      function backgroundChanger(ipt) {
+        var target = document.querySelector('body');
+        if(ipt.value === 'Night') {
+          target.style.backgroundColor = 'black';
+          target.style.color = 'sandybrown';
+          ipt.value = 'Day';
+        }
+        else {
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          ipt.value = 'Night';
+        }
+      }
+    </script>
   </head>
   <body>
     <h1>JavaScript</h1>
-    1+1
-    <br>
-    <script>
-      document.write('Hello World!');
-      
-      document.write(1+1);
-    </script>
+
+    <input type="button" value="Night" onclick="
+    backgroundChanger(this);
+    ">
   </body>
 </html>
