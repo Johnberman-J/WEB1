@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var friends = {
+        "bundang" : "Jason",
+        "canada" : "Jake",
+        "singal" : "Tiger",
+        "suji" : "Mike"
+      };
+      document.write("canada : "+friends.canada+"<br>");
+      document.write("suji : "+friends.suji+"<br>");
+      friends.seongsu = "Juhan";
+      document.write("seongsu : "+friends.seongsu+"<br>");
+    </script>
+    <h2>Iterator</h2>
+    <script>
+      for(var key in friends) {
+        document.write(key+'<br>');
+      }
+      document.write("<br><br>");
+      for(var key in friends) {
+        document.write(friends[key]+'<br>');
+      }
+    </script>
+  </body>
+</html>
